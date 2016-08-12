@@ -1,0 +1,14 @@
+name: snapraid
+version: 1
+summary: SnapRAID is a backup program for disk arrays. 
+description: |
+  SnapRAID stores parity information of your data and it recovers from up to six disk failures.
+  It is mainly targeted for a home media center, with a lot of big files that rarely change.
+parts:
+  snapraid:
+    plugin: autotools
+    source: https://github.com/amadvance/snapraid/archive/v10.0.tar.gz
+apps:
+  snapraid:
+    command: snapraid
+confinement: devmode # Temporarty until snappy has storage interfaces
