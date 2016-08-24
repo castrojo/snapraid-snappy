@@ -4,7 +4,7 @@
 
 On any Linux system with snappy installed:
 
-    snap install snapraid --channel=edge --devmode 
+    snap install snapraid --edge --devmode 
 
 This will get you the latest version of SnapRAID. It is built by Launchpad and updates on every upstream SnapRAID commit. 
 
